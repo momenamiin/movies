@@ -7,6 +7,7 @@ const MoviesList = ({results}) => {
   return (
     <View>
         <FlatList 
+        contentContainerStyle={styles.list}
         data={results}
         keyExtractor= {(results) => results.id.toString()}
         renderItem={({ item }) =>{
@@ -21,6 +22,9 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: 'bold'
+  },
+  list: {
+    alignItems : 'center',
   }
 });
 

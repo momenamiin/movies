@@ -5,10 +5,10 @@ import HomeScreen from './src/screens/HomeScreen';
 
 const navigator = createStackNavigator(
   {
-    Home: HomeScreen,
+    MoviesAPP: HomeScreen,
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'MoviesAPP',
   }
 );
 
