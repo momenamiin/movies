@@ -1,6 +1,15 @@
 # Instabug Challange 
 This Challange is a part of the process of InstaBug Intern Summer 2021
 
+# Challange requirments
+
+Build an app using React Native that displays a list of movies fetched through a web API
+
+ Markup : * The app’s initial (and only) screen should list movies fetched from the web API (more details below).
+ Markup : * For each movie, the following should be displayed: title, overview, date, poster.
+ Markup : * List should lazily load more data as you scroll down. A loading indicator should be displayed at the bottom
+of the list when new data is still loading.
+
 ## Intro
 This was my first time to use react-native, comming from Native Android and Flutter, and i only had one single day to learn and apply what i have learned in this project.  
 
