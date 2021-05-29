@@ -1,24 +1,19 @@
 import React ,{useState} from 'react';
 import { View, Text, StyleSheet, FlatList ,ActivityIndicator} from 'react-native';
 import MovieItem from './MovieItem'
-const MoviesList = ({results, onEnd}) => {
-  //`console`.log(results.page)
-  //;onMomentumScrollEnd function onScrollEndDrag
-  const [loading, setLoading] = useState(false);
-
-   renderFooter = () => {
-    if (loading) return null;
-    return (
-      <View
-        style={{
-          paddingVertical: 20,
-          borderTopWidth: 1,
-          borderColor: "#CED0CE"
-        }}
-      >
-        <ActivityIndicator animating size="large" />
-      </View>
-    );
+const MoviesList = ({fetching, results, onEnd }) => {
+ 
+  renderFooter = () => {
+    //console.log(fetching);
+    return fetching ? <View
+    style={{
+      paddingVertical: 20,
+      borderTopWidth: 1,
+      borderColor: "#000000"
+    }}
+  >
+    <ActivityIndicator animating size="large" />
+  </View> : null
   }; 
 
 
@@ -28,11 +23,10 @@ const MoviesList = ({results, onEnd}) => {
         contentContainerStyle={styles.list}
         data={results}
         onEndReached={()=> {
-          setLoading(true); 
           onEnd()
         }
         }
-        onEndThreshold={0}
+        onEndThreshold={0}  
         ListFooterComponent={renderFooter}
         keyExtractor= {(results) => results.id.toString()}
         renderItem={({ item }) =>{

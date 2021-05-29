@@ -59,7 +59,7 @@ export default () => {
         MoviesApi('1');
     },[]);
 
-    return [MoviesApi , results,errorMessage, fetchnewPage];
+    return [MoviesApi , results,errorMessage, fetchnewPage, fetching];
 };
 
 
