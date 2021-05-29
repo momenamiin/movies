@@ -16,6 +16,7 @@ This was my first time to use react-native, comming from Native Android and Flut
 
 ## ScreenShot
 ![image](https://user-images.githubusercontent.com/18642838/120050068-5efa2080-c01c-11eb-999b-954643b5dd2e.png)
+![image](https://user-images.githubusercontent.com/18642838/120069967-ed0bf080-c088-11eb-9764-6d88cc650dfc.png)
 
 ## Third party libraries used 
 axios
