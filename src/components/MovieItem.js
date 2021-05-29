@@ -4,7 +4,7 @@ import { View, Image, Text, StyleSheet } from 'react-native';
 
 const MovieItem = ({ item }) => {
 
-    console.log(item.original_title);
+    //console.log(item.original_title);
     return (
         <View style={styles.Container}>
             <Text style={styles.name}>{item.original_title}</Text>
